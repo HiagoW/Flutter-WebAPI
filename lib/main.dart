@@ -7,8 +7,8 @@ import 'screens/home_screen/home_screen.dart';
 
 void main() {
   JournalService service = JournalService();
-  service.register(Journal.empty());
-  // service.get();
+  // service.register(Journal.empty());
+  service.getAll();
   runApp(const MyApp());
 }
 
@@ -42,6 +42,8 @@ class MyApp extends StatelessWidget {
             return AddJournalScreen(journal: journal);
           });
         }
+
+        return null;
       },
     );
   }
