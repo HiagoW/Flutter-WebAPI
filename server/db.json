@@ -1,43 +1,20 @@
 {
+  "users": [],
   "learnhttp": {
     "content": "Olá mundo!"
   },
   "journals": [
     {
-      "id": "817c5490-6735-11ed-a787-a76ce1c0bc16",
-      "content": "sexta",
-      "created_at": "2022-12-02 11:34:49.865247",
-      "updated_at": "2022-12-02 11:34:49.865247"
+      "id": "2ad6c210-7559-11ed-8514-3f8862566bde",
+      "content": "test",
+      "created_at": "2022-12-04 11:23:03.926002",
+      "updated_at": "2022-12-04 11:23:03.926002"
     },
     {
-      "id": "20bbccb0-748e-11ed-ae41-6f7b87458bb1",
-      "content": "foi um belo domingo",
-      "created_at": "2022-12-04 11:14:36.995321",
-      "updated_at": "2022-12-04 11:14:36.995321"
-    },
-    {
-      "id": "846c9500-748e-11ed-adf1-834e4a783d9c",
-      "content": "quinta",
-      "created_at": "2022-12-01 11:14:36.995321",
-      "updated_at": "2022-12-01 11:14:36.995321"
-    },
-    {
-      "id": "8b66c6a0-748e-11ed-bd9b-ed0240aa2939",
-      "content": "dom",
-      "created_at": "2022-12-04 11:18:26.124445",
-      "updated_at": "2022-12-04 11:18:26.124445"
-    },
-    {
-      "id": "a28b9c70-748e-11ed-bef0-b3a7c4272e58",
-      "content": "seg",
-      "created_at": "2022-12-05 11:18:26.124445",
-      "updated_at": "2022-12-05 11:18:26.124445"
-    },
-    {
-      "id": "a7ca45f0-748f-11ed-856a-0b3f222f8f06",
-      "content": "legal quinta",
-      "created_at": "2022-12-01 11:26:16.815711",
-      "updated_at": "2022-12-01 11:26:16.815711"
+      "id": "ad8ef600-7559-11ed-a572-c1e2d9b0307a",
+      "content": "ter",
+      "created_at": "2022-11-29 11:32:29.340793",
+      "updated_at": "2022-11-29 11:32:29.340793"
     }
   ]
 }
