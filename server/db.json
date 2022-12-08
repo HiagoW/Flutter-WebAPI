@@ -1,20 +1,40 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "hiago@gmail.com",
+      "password": "$2a$10$oRKpN8mHv4rbJgj.oRqmx.wYoalmB4XPalLlPH6IjerZLb5BM93XC",
+      "id": 1
+    },
+    {
+      "email": "hiago2@gmail.com",
+      "password": "$2a$10$BVLI22IdJLeTrt7GpDRibuVXuu0eh765ryK.jZlNKDG/fV86yfR/y",
+      "id": 2
+    }
+  ],
   "learnhttp": {
     "content": "Olá mundo!"
   },
   "journals": [
     {
       "id": "2ad6c210-7559-11ed-8514-3f8862566bde",
-      "content": "test",
+      "content": "dom",
       "created_at": "2022-12-04 11:23:03.926002",
-      "updated_at": "2022-12-04 11:23:03.926002"
+      "updated_at": "2022-12-04 11:23:03.926002",
+      "userId": 1
     },
     {
       "id": "ad8ef600-7559-11ed-a572-c1e2d9b0307a",
       "content": "ter",
       "created_at": "2022-11-29 11:32:29.340793",
-      "updated_at": "2022-11-29 11:32:29.340793"
+      "updated_at": "2022-11-29 11:32:29.340793",
+      "userId": 2
+    },
+    {
+      "id": "41c80e30-76ed-11ed-b458-a7b58ef35128",
+      "content": "sexta 2",
+      "created_at": "2022-11-30 11:41:29.503624",
+      "updated_at": "2022-11-30 11:41:29.503624",
+      "userId": 1
     }
   ]
 }

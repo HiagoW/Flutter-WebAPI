@@ -1,24 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webapi_first_course/helpers/weekday.dart';
 import 'package:flutter_webapi_first_course/services/journal_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../models/journal.dart';
 
 class AddJournalScreen extends StatelessWidget {
   final Journal journal;
-  AddJournalScreen({Key? key, required this.journal}) : super(key: key);
+  final bool isEditing;
+
+  AddJournalScreen({Key? key, required this.journal, required this.isEditing})
+      : super(key: key);
 
   final TextEditingController _contentController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    _contentController.text = journal.content;
     return Scaffold(
       appBar: AppBar(
         title: Text(WeekDay(journal.createdAt).toString()),
         actions: [
-          IconButton(onPressed: (){
-            registerJournal(context);
-          }, icon: const Icon(Icons.check))
+          IconButton(
+              onPressed: () {
+                registerJournal(context);
+              },
+              icon: const Icon(Icons.check))
         ],
       ),
       body: Padding(
@@ -36,12 +43,22 @@ class AddJournalScreen extends StatelessWidget {
   }
 
   registerJournal(BuildContext context) {
-    String content = _contentController.text;
-    journal.content = content;
-    JournalService service = JournalService();
-    service.register(journal)
-      .then((value){
-        Navigator.pop(context, value);
-      });
+    SharedPreferences.getInstance().then((prefs) {
+      String? token = prefs.getString("accessToken");
+      if (token != null) {
+        String content = _contentController.text;
+        journal.content = content;
+        JournalService service = JournalService();
+        if (isEditing) {
+          service.edit(journal.id, journal, token).then((value) {
+            Navigator.pop(context, value);
+          });
+        } else {
+          service.register(journal, token).then((value) {
+            Navigator.pop(context, value);
+          });
+        }
+      }
+    });
   }
 }
