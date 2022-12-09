@@ -9,6 +9,11 @@
       "email": "hiago2@gmail.com",
       "password": "$2a$10$BVLI22IdJLeTrt7GpDRibuVXuu0eh765ryK.jZlNKDG/fV86yfR/y",
       "id": 2
+    },
+    {
+      "email": "hiago3@gmail.com",
+      "password": "$2a$10$W3aV.Et/u0qJZPQ0RhcieevBDQEoZL4o7KZ1HBpir3IszjNdpayoS",
+      "id": 3
     }
   ],
   "learnhttp": {
@@ -28,13 +33,6 @@
       "created_at": "2022-11-29 11:32:29.340793",
       "updated_at": "2022-11-29 11:32:29.340793",
       "userId": 2
-    },
-    {
-      "id": "41c80e30-76ed-11ed-b458-a7b58ef35128",
-      "content": "sexta 2",
-      "created_at": "2022-11-30 11:41:29.503624",
-      "updated_at": "2022-11-30 11:41:29.503624",
-      "userId": 1
     }
   ]
 }
